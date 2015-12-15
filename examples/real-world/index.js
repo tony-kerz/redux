@@ -2,9 +2,9 @@ import 'babel-core/polyfill'
 import React from 'react'
 import { render } from 'react-dom'
 import Root from './containers/Root'
-import configureStore from './store/configureStore'
+import store from './store/configureStore'
 
-const store = configureStore()
+console.log('index: store=%o', store)
 
 render(
   <Root store={store} />,
